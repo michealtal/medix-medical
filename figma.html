@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="figstyle.css">
 </head>
 <body>
+    
     <header>
+        <img class="logo" src="asset/medix logo.png">
          <div class="search"  > 
-            <input type="text" &nbsp placeholder=" &nbsp &nbsp Search for name..." >
+            <input type="text"  placeholder=" &nbsp &nbsp Search for name..." >
             <img class="search-icon" src="asset/search.png">
         
         </div>
          <div>
             <ul class="head-doc">
-                <li><img src="asset/notification.png" ></li>
+                <li><img class="notification" src="asset/notification.png" ></li>
                 <li><img class="doctor" src="asset/doctor-standing-with-folder-stethoscope 1.png"></li>
-                <li class="deko"> <select name="" id=""><option value="deko">Deko</option>
+                <li class="deko"> <select name="" id="mi"><option value="deko">Deko</option>
                     <option value="micheal">Micheal</option></select></li>
             </ul> 
         </div>
@@ -31,92 +33,82 @@
         <div class="main-meter">
         <div class="meter">
           <br><br><br><br> <p>&nbsp;30%</p>
-         <div class="blue"></div>
+         <div class="blue"></div><br>
+         <p class="letter">Emergency</p>
         </div>
         <div class="meter">
             <br><br> <p>&nbsp;55%</p>
-            <div class="purple"></div>
+            <div class="purple"></div><br>
+            <p class="letter">&nbsp;&nbsp;ICU</p>
         </div>
         <div class="meter">
             <p class="eighty">&nbsp;80%</p>
-            <div class="deepblue"></div>
+            <div class="deepblue"></div><br>
+            <p class="letter">Neurology</p>
         </div>
         <div class="meter">
             <br><br><br><br> <p>&nbsp;40%</p>
-            <div class="pink"></div>
+            <div class="pink"></div><br>
+            <p class="letter">Cardiology</p>
         </div>
         <div class="meter">
             <br><br> <p>&nbsp;65%</p>
-            <div class="green"></div>
+            <div class="green"></div><br>
+            <p class="letter">Gynecology</p>
         </div>
         <div class="meter">
-            <br> <p>&nbsp;72%</p><div class="orange"></div></div>
+            <br> <p>&nbsp;72%</p><div class="orange">
+
+            </div><br>
+            <p class="letter">Urolgy</p>
+        </div>
         </div>
      </aside>
      <main>
        <div class="mainlabel">
         <label> Patient visited by department</label> 
-        <select>
+        <select class="option">
          
-           <option class="option"value="weekly">Weekly</option>
-            <option value="daily">Daily</option>
-             <option value="Monthly"> Monthly</option>
-              <option value="yearly">Yearly</option>
+         <option  value="weekly">Weekly</option>
+            <option  value="daily">Daily</option>
+             <option  value="Monthly"> Monthly</option>
+              <option  value="yearly">Yearly</option>
                </select>
                </div>
-              <table class="maintable" >
-                <tr>
-                <th class="disc">
-                        <ul >
-                        <li>Cardiology</li>
-                    </ul>
-                </th>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <th class="disc">
-                        <ul class="disc" >
-                        <li>Neurology</li>
-                    </ul>
-                </th>
-                    <td>30%</td>
-                </tr>
-                <tr>
-                    <th class="disc">
-                        <ul class="disc">
-                        <li>Dermatology</li>
-                    </ul>
-                </th>
-                    <td>20%</td>
-                </tr>
-              </table>
+              <div class="mainspan">
+                <span class="color1">...</span><span class="ology">cardiology</span><span>&nbsp;&nbsp;&nbsp;40%</span><br><br>
+                <span class="color2">...</span><span class="ology">Neuriology</span><span>&nbsp;&nbsp;40%</span><br><br>
+                <span class="color3">...</span><span class="ology">Dematology</span><span>40%</span>
+
+              </div>
+                
                 
 
      </main>
      <nav>
-        <img class="logo" src="asset/medix logo.png"><br>
-        <img class="icon" src="asset/menu.png" ><span >Dashbooard</span><br><br>
-        <img class="icon" src="asset/calender.png"><span >Appointment</span><br><br>
-        <img class="icon" src="asset/care.png"><span >Doctor</span><br><br>
-        <img class="icon" src="asset/building.png"><span >Department</span><br><br>
-        <img class="icon" src="asset/sitting.png"><span >Patient</span><br><br>
-        <img class="icon" src="asset/message.png"><span>Chats</span><br><br>
-        <img class="icon" src="asset/whatapp.png"><span >Calls</span><br><br><br><br>
-        <div ><button>+Register Patient</button></div>
+        <br>
+        <div><img class="icon" src="asset/menu.png" ><span >Dashboard</span></div><br>
+      <div><img class="icon" src="asset/calender.png"><span >Appointment</span></div><br>
+       <div><img class="icon" src="asset/care.png"><span >Doctor</span></div><br>
+        <div><img class="icon" src="asset/building.png"><span >Department</span></div><br>
+       <div> <img class="icon" src="asset/sitting.png"><span >Patient</span></div><br>
+      <div><img class="icon" src="asset/message.png"><span>Chats</span></div><br>
+       <div> <img class="icon" src="asset/whatapp.png"><span >Calls</span></div><br><br>
+              <button><a href="form.html">+Register Patient</a></button>
         <img  id ="laptop"src="asset/image 216.png" alt="man on laptop"><br>
-        <img class="icon" src="asset/setting.png"><span >Settings</span>
+       <div id="set"><img class="setting" src="asset/setting.png"><span >Settings</span></div>
      </nav>
      <footer>
         <span>Department list</span>
         <button>Add Department</button>
-        <table width="790" height="300">
+        <table width="770" height="250">
             <tr>
                 <th>Department Name</th>
                 <th>Doctor</th>
                 <th>Gender</th>
                 <th>Head of Department</th>
-                <th> Action </th>
-                <th> Status</th>
+                <th > Action </th>
+                <th style="text-align:center;"> Status</th>
 
             </tr>
             <tr>
@@ -124,7 +116,7 @@
                 <td><img src="asset/Memoji Boys 6-18.png"> kicker nicili</td>
                 <td>Male</td>
                 <td>Heidory kan</td>
-                <td><img src="asset/pen.png" >
+                <td ><img src="asset/pen.png" >
                     <img src="asset/profile.png" >
                     <img src="asset/delete.png" ></td>
                 <td><button class="active">Active</button></td>
@@ -134,7 +126,7 @@
                 <td><img src="asset/divin.png" width="40px" > James</td>
                 <td>Male</td>
                 <td>Thomos flecther</td>
-                <td><img src="asset/pen.png" >
+                <td ><img src="asset/pen.png" >
                     <img src="asset/profile.png" >
                     <img src="asset/delete.png" ></td>
                 <td><button class="inactive">Inactive</button></td>
@@ -143,7 +135,7 @@
                 <td><img src=asset/richard.png width="40px"> karton</td>
                 <td>Female</td>
                 <td>joenathan Doe</td>
-                <td><img src="asset/pen.png" >
+                <td ><img src="asset/pen.png" >
                     <img src="asset/profile.png" >
                     <img src="asset/delete.png" ></td>
                 <td><button class="active">Active</button></td>
@@ -153,13 +145,56 @@
                 <td><img src="asset/bassy.png" width="40px">Micheal john</td>
                 <td>Male</td>
                 <td>Micheal john</td>
-                <td><img src="asset/pen.png" >
+                <td class="gone"><img src="asset/pen.png" >
                     <img src="asset/profile.png" >
                     <img src="asset/delete.png" ></td>
                 <td><button class="active">Active</button></td>
 
             </tr>
         </table>
-     </footer>
+        </footer>
+        <div class="footer2">
+            <h2>Department List</h2>
+        <div class="name">
+            <div class="nic">
+               <img src="asset/Memoji Boys 6-18.png" >
+               <p>Kicker Nicile <span class="down">Male</span></p>
+            </div>
+            <p>ICU</p>
+            <p class="active2">Active</p>
+        </div><br>
+        <div class="name">
+            <div class="nic">
+               <img src="asset/Memoji Boys 6-18.png" >
+               <p>Kicker Nicile <span class="down">Male</span></p>
+            </div>
+            <p>ICU</p>
+            <p class="active2">Active</p>
+        </div><br>
+        <div class="name">
+            <div class="nic">
+               <img src="asset/Memoji Boys 6-18.png" >
+               <p>Kicker Nicile <span class="down">Male</span></p>
+            </div>
+            <p>ICU</p>
+            <p class="active2">Active</p>
+        </div><br>
+        <div class="name">
+            <div class="nic">
+               <img src="asset/Memoji Boys 6-18.png" >
+               <p>Kicker Nicile <span class="down">Male</span></p>
+            </div>
+            <p>ICU</p>
+            <p class="active2">Active</p>
+        </div><br>
+        <div class="name">
+            <div class="nic">
+               <img src="asset/Memoji Boys 6-18.png" >
+               <p>Kicker Nicile <span class="down">Male</span></p>
+            </div>
+            <p>ICU</p>
+            <p class="active2">Active</p>
+        </div><br>
+    </div>
 </body>
-</html>
+</html> 
