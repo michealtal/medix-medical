@@ -1,0 +1,110 @@
+body{
+    background-image: url(images/blue-healthcare.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-size: 90%; */
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.container img{
+    width: 200px;
+    margin-bottom: 50px;
+}
+#login{
+    background-color: aqua;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+}
+#signup{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+}
+#form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    color: white;
+    display: none;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 5px;
+}
+ #form .in,button{
+    width: 320px; 
+     margin: 20px;
+     padding:10px; 
+     border-radius:20px ;
+}
+
+#rember{
+    display: flex;
+    justify-content: space-around;
+}
+.input-box{
+    position: relative;
+    margin-top: 10px;
+}
+ .input-box input{
+    padding: 10px;
+    margin: 20px;
+    width: 320px; 
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    transition: 1s ease-in;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+	top:5px;
+	font-size: 10px;
+} 
+.input-box label{
+    position: absolute;
+    letter-spacing: 3px;
+	position:absolute;
+	transition: 1s ease-in;
+     left:105px;
+     top:25px;
+}
+
+#form a{
+    text-decoration: none;
+    color: white;
+}
+#form a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+#form2{
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 5px white;
+    display: none;
+}
+
+
+
