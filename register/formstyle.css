@@ -94,6 +94,20 @@ input{
     border-color: #8146FF;
     border-radius: 8px;
 }
+#error{
+    width: 250px;
+    background-color:transparent;
+    padding: 10px;
+    border: transparent;
+    border-radius: 8px;
+    color: black;
+    display: flex;
+}
+i{
+   font-size: 30px;
+}
+ 
+
 
 @media screen and (max-width: 750px) {
      header{

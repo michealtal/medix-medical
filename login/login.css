@@ -105,6 +105,19 @@ body{
     box-shadow: 5px 5px 5px white;
     display: none;
 }
+#error{
+    width: 250px;
+   margin-left: 90%;
+    background-color:transparent;
+    padding: 10px;
+    border: transparent;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+}
+i{
+   font-size: 30px;
+}
 
 
 

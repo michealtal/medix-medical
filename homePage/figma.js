@@ -19,9 +19,11 @@ fetch(mainApi)
 
 });
 
+ const filter = document.getElementById("filter")
+
 function displayData(data) {
    const tableContainer = document.querySelector("#tableContainer")
-   let tableContent = data.users.slice(0,5);
+   let tableContent = data.users.slice(0,10);
    const table = document.createElement ("table");
    table.innerHTML = `
    <tr>
@@ -41,9 +43,9 @@ function displayData(data) {
                 <td><img src="${data.image}"> ${data.firstName}</td>
                 <td>${data.gender}</td>
                 <td>${data.company.title}</td>
-                <td ><img src="asset/pen.png" >
-                    <img src="asset/profile.png" >
-                    <img src="asset/delete.png" ></td>
+                <td ><img src="../asset/pen.png" >
+                    <img src="../asset/profile.png" >
+                    <img src="../asset/delete.png" ></td>
                 <td><button class="active">Active</button></td>
             </tr>
       `;
@@ -52,5 +54,9 @@ function displayData(data) {
    });
  tableContainer.appendChild(table)
 
-}
+};
+
+
+
+
 
